@@ -2,56 +2,83 @@ import React from "react";
 
 function App() {
   return (
-    <div id="main">
-      <div className="leftside">
-        <img className="image" src="https://i.ibb.co/KDGFs9d/XP-Logo.png"></img>
-        <div className="mainwords">
-          <div className="big-words xp-tickets">XP TICKETS</div>
-          <div className="againwords">
-            <div className="words">About XP</div>
-            <div className="words">Upcoming Events</div>
-            <div className="words">Sell Your Tickets</div>
-          </div>
+    <body>
+      <main>
+        <img
+          className="image"
+          src="https://i.ibb.co/KDGFs9d/XP-Logo.png"
+          alt="XP logo"
+        ></img>
+        <section className="leftside">
+          <section className="left-side-one">
+            <h1 className="xp-tickets">XP TICKETS</h1>
+            <p>
+              <a href="www.google.com">About XP</a>
+            </p>
+            <p>
+              <a href="www.google.com">Upcoming Events</a>
+            </p>
+            <p>
+              <a href="www.google.com">Sell Your Tickets</a>
+            </p>
+          </section>
+          <section className="left-side-two">
+            <h1>
+              <a href="www.google.com">
+                <img
+                  className="icon"
+                  src="https://i.ibb.co/4FdMwHs/Twitter.png"
+                  alt="Twitter logo"
+                ></img>
+              </a>
+              <a href="www.google.com">
+                <img
+                  className="icon"
+                  src="https://i.ibb.co/hmJ1kLq/Discord.png"
+                  alt="Discord logo"
+                ></img>
+              </a>
+              <a href="www.google.com">
+                <img
+                  className="icon"
+                  src="https://i.ibb.co/RjbNQsL/Threads.png"
+                  alt="Threads logo"
+                ></img>
+              </a>
+              <a href="www.google.com">
+                <img
+                  className="icon"
+                  src="https://i.ibb.co/1sX8YPw/Mastodon.png"
+                  alt="Mastodon logo"
+                ></img>
+              </a>
+            </h1>
+            <p>
+              <a href="www.google.com">Tamperproof</a>
+            </p>
+            <p>
+              <a href="www.google.com">Captain Labs</a>
+            </p>
+            <p>
+              <a href="www.google.com">Contact Us</a>
+            </p>
+          </section>
+        </section>
+      </main>
+      <section className="rightside">
+        <h1>STAY IN THE KNOW</h1>
+        <div className="indent">
+          <input placeholder="Name" />
         </div>
-        <div className="mainwordstwo">
-          <div className="big-words">
-            <img
-              className="icon"
-              src="https://i.ibb.co/4FdMwHs/Twitter.png"
-            ></img>
-            <img
-              className="icon"
-              src="https://i.ibb.co/1sX8YPw/Mastodon.png"
-            ></img>
-            <img
-              className="icon"
-              src="https://i.ibb.co/hmJ1kLq/Discord.png"
-            ></img>
-            <img
-              className="icon"
-              src="https://i.ibb.co/RjbNQsL/Threads.png"
-            ></img>
-          </div>
-          <div className="morewords">
-            <div className="words">Tamperproof</div>
-            <div className="words">Captain Labs</div>
-            <div className="words">Contact Us</div>
-          </div>
+        <div className="indent">
+          <input type="email" placeholder="Email" />
         </div>
-      </div>
-
-      <div className="rightside">
-        <div className="in-the-know">STAY IN THE KNOW</div>
-        <div className="space"></div>
-        <input className="righterside" placeholder="Name" />
-        <div className="space"></div>
-        <input className="righterside" type="email" placeholder="Email" />
-        <div className="space"></div>
-        <button className="righterside">REQUEST EARLY ACCESS</button>
-      </div>
-
-      <div className="footer">XP BY CAPTAIN / 2023 All Rights Reserved</div>
-    </div>
+        <button>REQUEST EARLY ACCESS</button>
+      </section>
+      <footer>
+        <div className="bottom">XP BY CAPTAIN / 2023 All Rights Reserved</div>
+      </footer>
+    </body>
   );
 }
 
