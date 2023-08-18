@@ -1,4 +1,5 @@
 import React from "react";
+// import '/page.module.css';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             </p>
           </section>
           <section className="left-side-two">
-            <h1>
+            <h1 className="icon-group">
               <a href="www.google.com">
                 <img
                   className="icon"
@@ -53,15 +54,17 @@ function App() {
                 ></img>
               </a>
             </h1>
-            <p>
-              <a href="www.google.com">Tamperproof</a>
-            </p>
-            <p>
-              <a href="www.google.com">Captain Labs</a>
-            </p>
-            <p>
-              <a href="www.google.com">Contact Us</a>
-            </p>
+            <section className="left-side-two-links">
+              <p>
+                <a href="www.google.com">Tamperproof</a>
+              </p>
+              <p>
+                <a href="www.google.com">Captain Labs</a>
+              </p>
+              <p>
+                <a href="www.google.com">Contact Us</a>
+              </p>
+            </section>
           </section>
         </section>
       </main>
