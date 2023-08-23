@@ -1,30 +1,27 @@
 import React from "react";
-// import '/page.module.css';
+import Head from "next/head";
 
 function App() {
   return (
-    <body>
-      <main>
-        <img
-          className="image"
-          src="https://i.ibb.co/KDGFs9d/XP-Logo.png"
-          alt="XP logo"
-        ></img>
-        <section className="leftside">
-          <section className="left-side-one">
+    <div className="random">
+      <Head>
+        <title>XP - Request Early Access</title>
+      </Head>
+      <footer>
+        <main>
+          <img
+            className="image"
+            src="https://hngr-icons.s3.amazonaws.com/supperclub/ticketdex/xp_logo_4+1.png"
+            alt="XP logo"
+          ></img>
+          <section className="links-one">
             <h1 className="xp-tickets">XP TICKETS</h1>
-            <p>
-              <a href="www.google.com">About XP</a>
-            </p>
-            <p>
-              <a href="www.google.com">Upcoming Events</a>
-            </p>
-            <p>
-              <a href="www.google.com">Sell Your Tickets</a>
-            </p>
+            <a href="www.google.com">About XP</a>
+            <a href="www.google.com">Upcoming Events</a>
+            <a href="www.google.com">Sell Your Tickets</a>
           </section>
-          <section className="left-side-two">
-            <h1 className="icon-group">
+          <section className="links-two">
+            <section className="icon-group">
               <a href="www.google.com">
                 <img
                   className="icon"
@@ -53,35 +50,27 @@ function App() {
                   alt="Mastodon logo"
                 ></img>
               </a>
-            </h1>
-            <section className="left-side-two-links">
-              <p>
-                <a href="www.google.com">Tamperproof</a>
-              </p>
-              <p>
-                <a href="www.google.com">Captain Labs</a>
-              </p>
-              <p>
-                <a href="www.google.com">Contact Us</a>
-              </p>
+            </section>
+            <section class="links-two-without-icons">
+              <a href="www.google.com">Tamperproof</a>
+              <a href="www.google.com">Captain Labs</a>
+              <a href="www.google.com">Contact Us</a>
             </section>
           </section>
-        </section>
-      </main>
-      <section className="rightside">
-        <h1>STAY IN THE KNOW</h1>
-        <div className="indent">
-          <input placeholder="Name" />
+          <div id="rightside-gap">
+            <section className="rightside">
+              <h1>STAY IN THE KNOW</h1>
+              <input placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <button>REQUEST EARLY ACCESS</button>
+            </section>
+          </div>
+        </main>
+        <div className="xp-by-captain">
+          XP BY CAPTAIN / 2023 All Rights Reserved
         </div>
-        <div className="indent">
-          <input type="email" placeholder="Email" />
-        </div>
-        <button>REQUEST EARLY ACCESS</button>
-      </section>
-      <footer>
-        <div className="bottom">XP BY CAPTAIN / 2023 All Rights Reserved</div>
       </footer>
-    </body>
+    </div>
   );
 }
 
