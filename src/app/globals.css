@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+
 :root {
   --beige-color: #fef3c7;
   --navy-color: #1f2937;
@@ -51,59 +53,9 @@ a {
   font-size: 14px;
 }
 
-.links-one,
-.links-two {
-  font-family: "roboto mono";
-  font-weight: lighter;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.links-one {
-  gap: 12px;
-}
-
-.links-one :not(:first-child) {
-  line-height: 56px;
-}
-
-.links-two-without-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  line-height: 56px;
-  gap: 12px;
-}
-
-.icon {
-  width: 38px;
-  height: 38px;
-}
-
-.icon-group {
-  display: flex;
-  flex-direction: row;
-}
-
-.rightside {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  font-size: 30px;
-  width: 381px;
-  gap: 22px;
-}
-
-#rightside-gap {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
 input::placeholder {
   color: var(--beige-color);
-  font-family: "roboto mono";
+  font-family: "Roboto Mono";
   font-weight: lighter;
 }
 
@@ -130,20 +82,4 @@ button {
   font-family: "Sequel100black-75";
   font-weight: lighter;
   cursor: pointer;
-}
-
-.image {
-  width: 134px;
-  height: 145px;
-  filter: sepia(60%) saturate(230%) brightness(100%);
-}
-
-.xp-by-captain {
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
-  font-family: "roboto mono";
-  border-top: 1px solid var(--beige-color);
-  font-weight: lighter;
-  padding: 20px 0;
 }
